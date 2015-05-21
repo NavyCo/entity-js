@@ -1,5 +1,7 @@
 # Entity.js
 Entity.js is for SourceEngine[1]
+## Try it out!
+Goto [repl.it](https://repl.it/languages/Nodejs) to see how it runs!
 ## Example
 ```javascript
 var new_entity = n_entity({
