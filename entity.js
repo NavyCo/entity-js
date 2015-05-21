@@ -2,6 +2,7 @@
 
 Copyright(c) 2015 by Nicholas Phillips.
 All Rights Reserved.
+> > > http://navyco.github.io/entity-js < < <
 
 */
 function n_entity(obj) {
@@ -162,21 +163,41 @@ function a_entity(obj, data) {
         return (_o);
     }
 }
+console.info(
+    [
+        "This project was created by NavyCommander [Owner]",
+        "Goto http://navyco.github.io/entity-js to see the github project page!"
+    ].join("\n")
+);
 // // // // Example
 // var new_entity = n_entity({
-// "entity": "prop_dynamic",
-// "targetname": "Alyx",
-// "classname": "props",
-// "keyvalues": "\"model\" \"models/alyx.mdl\""
+//     "entity": "prop_dynamic",
+//     "targetname": "Alyx",
+//     "classname": "props",
+//     "keyvalues": "\"model\" \"models/alyx.mdl\""
 // });
 // var _text = "";
 // _text += c_entity(new_entity);
 // _text += "\n";
 // _text += f_entity(new_entity, "color \"255 0 0\"");
 // _text += "\n";
-// _text += a_entity(new_entity, {"target":"!self","trigger":"onuser1","input":"ignitelifetime","input_arg":"0.005","delay":"0.0","repeats":"-1"});
+// _text += a_entity(new_entity, {
+//     "target": "!self",
+//     "trigger": "onuser1",
+//     "input": "ignitelifetime",
+//     "input_arg": "0.005",
+//     "delay": "0.0",
+//     "repeats": "-1"
+// });
 // _text += "\n";
-// _text += a_entity(new_entity, {"target":"!self","trigger":"onuser1","input":"fireuser4","input_arg":"","delay":"0.05","repeats":"-1"});
+// _text += a_entity(new_entity, {
+//     "target": "!self",
+//     "trigger": "onuser1",
+//     "input": "fireuser4",
+//     "input_arg": "",
+//     "delay": "0.05",
+//     "repeats": "-1"
+// });
 // _text += "\n";
 // _text += f_entity(new_entity, "fireuser1");
 // console.log(_text);
