@@ -28,3 +28,7 @@ ent_fire Alyx addoutput "onuser1 !self, ignitelifetime, 0.005, 0.0, -1";
 ent_fire Alyx addoutput "onuser1 !self, fireuser4, , 0.05, -1";
 ent_fire Alyx fireuser1;
 ```
+
+## Contributators
+@navyco
+@avunitanon
