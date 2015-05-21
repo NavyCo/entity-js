@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <title>Entity-js by NavyCo</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="inner">
+        <h1>Entity-js</h1>
+        <h2>Entity.js is for SourceEngine[1]</h2>
+        <a href="https://github.com/NavyCo/entity-js" class="button"><small>View project on</small> GitHub</a>
+      </div>
+    </header>
+
+    <div id="content-wrapper">
+      <div class="inner clearfix">
+        <section id="main-content">
+          <h1>
+<a id="entityjs" class="anchor" href="#entityjs" aria-hidden="true"><span class="octicon octicon-link"></span></a>Entity.js</h1>
+
+<p>Entity.js is for SourceEngine[1]</p>
+
+<h2>
+<a id="example" class="anchor" href="#example" aria-hidden="true"><span class="octicon octicon-link"></span></a>Example</h2>
+
+<div class="highlight highlight-javascript"><pre><span class="pl-k">var</span> new_entity <span class="pl-k">=</span> n_entity({
+<span class="pl-s"><span class="pl-pds">"</span>entity<span class="pl-pds">"</span></span><span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">"</span>prop_dynamic<span class="pl-pds">"</span></span>,
+<span class="pl-s"><span class="pl-pds">"</span>targetname<span class="pl-pds">"</span></span><span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">"</span>Alyx<span class="pl-pds">"</span></span>,
+<span class="pl-s"><span class="pl-pds">"</span>classname<span class="pl-pds">"</span></span><span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">"</span>props<span class="pl-pds">"</span></span>,
+<span class="pl-s"><span class="pl-pds">"</span>keyvalues<span class="pl-pds">"</span></span><span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">"</span><span class="pl-cce">\"</span>model<span class="pl-cce">\"</span> <span class="pl-cce">\"</span>models/alyx.mdl<span class="pl-cce">\"</span><span class="pl-pds">"</span></span>
+});
+<span class="pl-k">var</span> _text <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">"</span><span class="pl-pds">"</span></span>;
+_text <span class="pl-k">+=</span> c_entity(new_entity);
+_text <span class="pl-k">+=</span> <span class="pl-s"><span class="pl-pds">"</span><span class="pl-cce">\n</span><span class="pl-pds">"</span></span>;
+_text <span class="pl-k">+=</span> f_entity(new_entity, <span class="pl-s"><span class="pl-pds">"</span>color <span class="pl-cce">\"</span>255 0 0<span class="pl-cce">\"</span><span class="pl-pds">"</span></span>);
+_text <span class="pl-k">+=</span> <span class="pl-s"><span class="pl-pds">"</span><span class="pl-cce">\n</span><span class="pl-pds">"</span></span>;
+_text <span class="pl-k">+=</span> a_entity(new_entity, {<span class="pl-s"><span class="pl-pds">"</span>target<span class="pl-pds">"</span></span><span class="pl-k">:</span><span class="pl-s"><span class="pl-pds">"</span>!self<span class="pl-pds">"</span></span>,<span class="pl-s"><span class="pl-pds">"</span>trigger<span class="pl-pds">"</span></span><span class="pl-k">:</span><span class="pl-s"><span class="pl-pds">"</span>onuser1<span class="pl-pds">"</span></span>,<span class="pl-s"><span class="pl-pds">"</span>input<span class="pl-pds">"</span></span><span class="pl-k">:</span><span class="pl-s"><span class="pl-pds">"</span>ignitelifetime<span class="pl-pds">"</span></span>,<span class="pl-s"><span class="pl-pds">"</span>input_arg<span class="pl-pds">"</span></span><span class="pl-k">:</span><span class="pl-s"><span class="pl-pds">"</span>0.005<span class="pl-pds">"</span></span>,<span class="pl-s"><span class="pl-pds">"</span>delay<span class="pl-pds">"</span></span><span class="pl-k">:</span><span class="pl-s"><span class="pl-pds">"</span>0.0<span class="pl-pds">"</span></span>,<span class="pl-s"><span class="pl-pds">"</span>repeats<span class="pl-pds">"</span></span><span class="pl-k">:</span><span class="pl-s"><span class="pl-pds">"</span>-1<span class="pl-pds">"</span></span>});
+_text <span class="pl-k">+=</span> <span class="pl-s"><span class="pl-pds">"</span><span class="pl-cce">\n</span><span class="pl-pds">"</span></span>;
+_text <span class="pl-k">+=</span> a_entity(new_entity, {<span class="pl-s"><span class="pl-pds">"</span>target<span class="pl-pds">"</span></span><span class="pl-k">:</span><span class="pl-s"><span class="pl-pds">"</span>!self<span class="pl-pds">"</span></span>,<span class="pl-s"><span class="pl-pds">"</span>trigger<span class="pl-pds">"</span></span><span class="pl-k">:</span><span class="pl-s"><span class="pl-pds">"</span>onuser1<span class="pl-pds">"</span></span>,<span class="pl-s"><span class="pl-pds">"</span>input<span class="pl-pds">"</span></span><span class="pl-k">:</span><span class="pl-s"><span class="pl-pds">"</span>fireuser4<span class="pl-pds">"</span></span>,<span class="pl-s"><span class="pl-pds">"</span>input_arg<span class="pl-pds">"</span></span><span class="pl-k">:</span><span class="pl-s"><span class="pl-pds">"</span><span class="pl-pds">"</span></span>,<span class="pl-s"><span class="pl-pds">"</span>delay<span class="pl-pds">"</span></span><span class="pl-k">:</span><span class="pl-s"><span class="pl-pds">"</span>0.05<span class="pl-pds">"</span></span>,<span class="pl-s"><span class="pl-pds">"</span>repeats<span class="pl-pds">"</span></span><span class="pl-k">:</span><span class="pl-s"><span class="pl-pds">"</span>-1<span class="pl-pds">"</span></span>});
+_text <span class="pl-k">+=</span> <span class="pl-s"><span class="pl-pds">"</span><span class="pl-cce">\n</span><span class="pl-pds">"</span></span>;
+_text <span class="pl-k">+=</span> f_entity(new_entity, <span class="pl-s"><span class="pl-pds">"</span>fireuser1<span class="pl-pds">"</span></span>);
+<span class="pl-en">console</span><span class="pl-c1">.log</span>(_text);</pre></div>
+
+<h2>
+<a id="outcome" class="anchor" href="#outcome" aria-hidden="true"><span class="octicon octicon-link"></span></a>Outcome</h2>
+
+<pre><code>ent_create prop_dynamic "model" "models/alyx.mdl" "classname" "props" "targetname" "Alyx";
+ent_fire Alyx color "255 0 0";
+ent_fire Alyx addoutput "onuser1 !self, ignitelifetime, 0.005, 0.0, -1";
+ent_fire Alyx addoutput "onuser1 !self, fireuser4, , 0.05, -1";
+ent_fire Alyx fireuser1;
+</code></pre>
+
+<h2>
+<a id="contributators" class="anchor" href="#contributators" aria-hidden="true"><span class="octicon octicon-link"></span></a>Contributators</h2>
+
+<p><a href="https://github.com/navyco" class="user-mention">@navyco</a>
+<a href="https://github.com/AVunit-anon" class="user-mention">@AVunit-anon</a></p>
+        </section>
+
+        <aside id="sidebar">
+          <a href="https://github.com/NavyCo/entity-js/zipball/master" class="button">
+            <small>Download</small>
+            .zip file
+          </a>
+          <a href="https://github.com/NavyCo/entity-js/tarball/master" class="button">
+            <small>Download</small>
+            .tar.gz file
+          </a>
+
+          <p class="repo-owner"><a href="https://github.com/NavyCo/entity-js"></a> is maintained by <a href="https://github.com/NavyCo">NavyCo</a>.</p>
+
+          <p>This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the Architect theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.</p>
+        </aside>
+      </div>
+    </div>
+
+  
+  </body>
+</html>
